@@ -1,0 +1,284 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            [
+                [
+                    {
+                        "Company": "Fidelity",
+                        "BirthMonth": "Sep",
+                        "Education": "Masters",
+                        "FirstName": "Nipun",
+                        "Service": "Information Technology",
+                        "LastName": "Verma",
+                        "id": "1"
+                    },
+                    {
+                        "Company": "PNB",
+                        "BirthMonth": "July",
+                        "Education": "Masters",
+                        "FirstName": "Nidhi",
+                        "Service": "Banking",
+                        "LastName": "Gupta",
+                        "id": "2"
+                    },
+                    {
+                        "Company": "HSEB",
+                        "BirthMonth": "Oct",
+                        "Education": "Bachelors",
+                        "FirstName": "Ved",
+                        "Service": "Admin",
+                        "LastName": "Verma",
+                        "id": "3"
+                    },
+                    {
+                        "Company": "ESI",
+                        "BirthMonth": "Aug",
+                        "Education": "Doctorate",
+                        "FirstName": "Sunita",
+                        "Service": "Health",
+                        "LastName": "Verma",
+                        "id": "4"
+                    },
+                    {
+                        "Company": "UHVBN",
+                        "BirthMonth": "July",
+                        "Education": "Diploma",
+                        "FirstName": "Sanjeev",
+                        "Service": "Admin",
+                        "LastName": "Verma",
+                        "id": "5"
+                    },
+                    {
+                        "Company": "Chandigarh",
+                        "BirthMonth": "May",
+                        "Education": "MBA",
+                        "FirstName": "Yukti",
+                        "Service": "AdminJob",
+                        "LastName": "Verma",
+                        "id": "6"
+                    }
+                ]
+            ]
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "array",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                    [
+                        [
+                            {
+                                "Company": "Fidelity",
+                                "BirthMonth": "Sep",
+                                "Education": "Masters",
+                                "FirstName": "Nipun",
+                                "Service": "Information Technology",
+                                "LastName": "Verma",
+                                "id": "1"
+                            },
+                            {
+                                "Company": "PNB",
+                                "BirthMonth": "July",
+                                "Education": "Masters",
+                                "FirstName": "Nidhi",
+                                "Service": "Banking",
+                                "LastName": "Gupta",
+                                "id": "2"
+                            },
+                            {
+                                "Company": "HSEB",
+                                "BirthMonth": "Oct",
+                                "Education": "Bachelors",
+                                "FirstName": "Ved",
+                                "Service": "Admin",
+                                "LastName": "Verma",
+                                "id": "3"
+                            },
+                            {
+                                "Company": "ESI",
+                                "BirthMonth": "Aug",
+                                "Education": "Doctorate",
+                                "FirstName": "Sunita",
+                                "Service": "Health",
+                                "LastName": "Verma",
+                                "id": "4"
+                            },
+                            {
+                                "Company": "UHVBN",
+                                "BirthMonth": "July",
+                                "Education": "Diploma",
+                                "FirstName": "Sanjeev",
+                                "Service": "Admin",
+                                "LastName": "Verma",
+                                "id": "5"
+                            },
+                            {
+                                "Company": "Chandigarh",
+                                "BirthMonth": "May",
+                                "Education": "MBA",
+                                "FirstName": "Yukti",
+                                "Service": "AdminJob",
+                                "LastName": "Verma",
+                                "id": "6"
+                            }
+                        ]
+                    ]
+                ],
+                "additionalItems": true,
+                "items": {
+                    "$id": "#/items/anyOf/0/items",
+                    "anyOf": [
+                        {
+                            "$id": "#/items/anyOf/0/items/anyOf/0",
+                            "type": "array",
+                            "title": "The first anyOf schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "Company": "Fidelity",
+                                        "BirthMonth": "Sep",
+                                        "Education": "Masters",
+                                        "FirstName": "Nipun",
+                                        "Service": "Information Technology",
+                                        "LastName": "Verma",
+                                        "id": "1"
+                                    },
+                                    {
+                                        "Company": "PNB",
+                                        "BirthMonth": "July",
+                                        "Education": "Masters",
+                                        "FirstName": "Nidhi",
+                                        "Service": "Banking",
+                                        "LastName": "Gupta",
+                                        "id": "2"
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/items/anyOf/0/items/anyOf/0/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "Company": "Fidelity",
+                                                "BirthMonth": "Sep",
+                                                "Education": "Masters",
+                                                "FirstName": "Nipun",
+                                                "Service": "Information Technology",
+                                                "LastName": "Verma",
+                                                "id": "1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "Company",
+                                            "BirthMonth",
+                                            "Education",
+                                            "FirstName",
+                                            "Service",
+                                            "LastName",
+                                            "id"
+                                        ],
+                                        "properties": {
+                                            "Company": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/Company",
+                                                "type": "string",
+                                                "title": "The Company schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Fidelity"
+                                                ]
+                                            },
+                                            "BirthMonth": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/BirthMonth",
+                                                "type": "string",
+                                                "title": "The BirthMonth schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Sep"
+                                                ]
+                                            },
+                                            "Education": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/Education",
+                                                "type": "string",
+                                                "title": "The Education schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Masters"
+                                                ]
+                                            },
+                                            "FirstName": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/FirstName",
+                                                "type": "string",
+                                                "title": "The FirstName schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Nipun"
+                                                ]
+                                            },
+                                            "Service": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/Service",
+                                                "type": "string",
+                                                "title": "The Service schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Information Technology"
+                                                ]
+                                            },
+                                            "LastName": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/LastName",
+                                                "type": "string",
+                                                "title": "The LastName schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Verma"
+                                                ]
+                                            },
+                                            "id": {
+                                                "$id": "#/items/anyOf/0/items/anyOf/0/items/anyOf/0/properties/id",
+                                                "type": "string",
+                                                "title": "The id schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
